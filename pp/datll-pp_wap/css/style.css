@@ -1,0 +1,534 @@
+/* global reset - based on yui3 */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;border:0}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section{display: block}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ul,ol,li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;font-size:100%}
+legend{color:#000}
+
+body{font-family:'PingFang SC','arial','Microsoft Yahei','tahoma','sans-serif';background:#ebedee;max-width:7.5rem;}
+a{text-decoration:none;}
+.fl{float:left}
+.fr{float:right}
+.cf:before,.cf:after{content:""; display:table}
+.cf:after {clear:both}
+.cf {zoom:1}
+
+a{-webkit-tap-highlight-color:RGBA(0,0,0,0)}
+
+/* html {font-size:100px}
+body {font-size:16px;font-family:\5FAE\8F6F\96C5\9ED1;background:#fff;}
+
+@media screen and (min-width: 360px) {
+  html{font-size:118px;}
+}
+@media screen and (min-width: 414px) {
+  html{font-size:129px;}
+}
+@media screen and (min-width: 768px) {
+  html{font-size:240px;}
+} */
+
+
+.flex-container{display: -moz-box; /* Firefox */ display: -ms-flexbox; /* IE10 */ display: -webkit-box; /* Safari */ display: -webkit-flex;
+    /* Chrome, WebKit */ display: flex; display: flex; display: flex;}
+
+.dropload-up,.dropload-down{position:relative;height:0;overflow:hidden;		    /* 开启硬件加速 */-webkit-transform:translateZ(0);transform:translateZ(0);}
+.dropload-down{height:auto;}
+
+.dropload-refresh,.dropload-update,.dropload-noData{height:0.5rem;text-align:center;font-size:0.22rem;color:#888;}
+.dropload-load .loading{display:inline-block;height:15px;width:15px;border-radius:100%;margin:6px;border:2px solid #666;border-bottom-color:transparent;vertical-align:middle;-webkit-animation:rotate 0.75s linear infinite;animation:rotate 0.75s linear infinite;}
+
+/*长图推荐【电影、电视、动画】*/
+.empty{margin:0 auto;text-align:center;background:#fff;margin-top:5%;}
+.empty img{display:block;padding:1rem 0.2rem 2%;margin:0 auto;width:1.6rem;height:1.6rem;}
+.empty h3{width:96%;height:0.6rem;line-height:0.6rem;padding:0.2rem 2%;font-size:0.28rem;color:#969696;overflow:hidden;margin:0 auto;}
+.empty h5{width:96%;height:0.4rem;line-height:0.4rem;padding:0.02rem 2% 1rem 2%;font-size:0.26rem;color:#969696;overflow:hidden;margin:0 auto;}
+.listnav{width:7.3rem;padding:0 0.1rem;height:0.8rem;line-height:0.8rem;border-bottom:1px solid #dcdcdc;background:#fff;}
+.listnav .lis{width:90%;height:0.8rem;overflow:hidden;}
+.listnav .lis a{float:left;height:0.44rem;line-height:0.44rem;margin:0.18rem 0.1rem 0;padding:0 0.16rem;border-radius:0.44rem;font-size:0.22rem;color:#333;}
+.listnav .lis a.now{color:#fff;background:#00adef;}
+.listnav .more{float:right;width:0.68rem;height:0.48rem;line-height:0.48rem;margin:0.16rem 0 0;font-size:0.22rem;color:#333;}
+.listAll{width:7.3rem;padding:0 0.1rem 1%;line-height:0.8rem;border-bottom:1px solid #dcdcdc;background:#fff;}
+.listAll p{height:0.8rem;overflow:hidden;}
+.listAll p a{float:left;height:0.44rem;line-height:0.44rem;margin:0.18rem 0.1rem 0;padding:0 0.16rem;border-radius:0.44rem;font-size:0.22rem;color:#333;}
+.listAll p a.now{color:#fff;background:#00adef;}
+
+.slist{width:100%;background:#fff;}
+.slist li{width:7.3rem;padding:2% 0.1rem;border-bottom:1px solid #e7e7e7;background:#fff;}
+.slist li dt{position:relative;float:left;width:2rem;height:1.125rem;}
+.slist li dt img{display:block;width:100%;height:100%;}
+.slist li dt span{position:absolute;bottom:0;right:0;width:98%;padding:0 1%;height:0.36rem;line-height:0.36rem;text-align:right;font-size:0.2rem;color:#fff;background:rgba(0,0,0,0.3);}
+.slist li dd{float:left;width:5rem;margin:0 0 0 0.2rem;}
+.slist li dd p{height:0.64rem;line-height:0.32rem;font-size:0.24rem;color:#333;overflow:hidden;}
+.slist li dd span{color:#969696;font-size:0.22rem;}
+.slist li dd span i{display:inline-block;width:0.22rem;height:0.22rem;margin:0 0.02rem 0 0;vertical-align:-2px;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:80.5% 69.01%;}
+.slist .slist-more{display:block;width:100%;height:0.6rem;margin:0.3rem 0 0;line-height:0.65rem;text-align:center;font-size:0.24rem;color:#2fbdef;border-top:1px solid #dedede;}
+
+/*首页安装app*/
+.installApp{width:7.5rem;height:1rem;position:relative;}
+.installApp .closeBtn{width:0.68rem;height:1rem;position:absolute;left:0;top:0;}
+.installApp img{display: block;width:7.5rem;height:1rem;}
+
+
+
+.margin-top-16{margin-top:0.16rem;}
+
+/* 直播节目单 */
+.live-plist{width:7.5rem;background:#fafafa;}
+.live-plist .con{display:block;width:7.5rem;}
+.live-plist dl{margin:0 0 0 0.24rem;padding:0.24rem 0.24rem 0.24rem 0;font-size:0.26rem;color:#000;border-bottom:1px solid #C6DEEB;overflow:hidden;}
+.live-plist dt{float:left;width:2rem;margin:0 0.16rem 0 0;}
+.live-plist dt img{display:block;width:2rem;height:1.12rem;}
+.live-plist dd{float:left;width:4.86rem;}
+.live-plist dd h3{height:0.36rem;line-height:0.36rem;margin:0 0 0.1rem;overflow:hidden;}
+.live-plist dd h3 img{display:inline-block;width:0.26rem;height:0.26rem;margin:0 0.05rem 0 0;vertical-align:-0.02rem;}
+.live-plist dd p,.live-plist dd span{display:block;height:0.3rem;line-height:0.3rem;font-size:0.22rem;overflow:hidden;}
+.live-plist dd span{color:#999;}
+
+/* 游戏频道直播 */
+.game-live{width:7.5rem;background:#ffffff;margin:0 0 0.2rem;}
+.game-live .hd{width:98%;height:0.88rem;padding:0 1%;line-height:0.88rem;}
+.game-live .hd h3{float:left;font-size:0.3rem;color:black;}
+.game-live .hd .list-more{float:right;font-size:0.26rem;color:#999;padding-right:0;position:relative;vertical-align:top;}
+.game-live .hd .list-more em{float:right;font-size:0.26rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.04%;width:0.24rem;height:0.26rem;margin:0.28rem 0 0 0.05rem;}
+.game-live .hd .more{float:right;width:3.28rem;height:0.65rem;line-height:0.65rem;font-size:0.26rem;color:#969696;overflow:hidden;}
+.game-live .hd .more .moreicon{float:left;display:block;width:0.22rem;height:0.24rem;margin:0.205rem 0 0;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.04%;}
+.game-live .hd .more .moreTitle{float:left;margin-right:0.06rem;width:3rem;height:auto;white-space:nowrap;overflow:hidden;text-align:right;}
+.game-live .bd{width:98%;padding:0 1%;}
+.game-live .bd li{position:relative;display:block;width:100%;padding:0;margin-bottom:0.2rem;}
+.game-live .bd li a{display:block;color:#666;}
+.game-live .bd .bpic{float:left;width:2rem;height:1.12rem;margin:0 0.24rem 0 0;}
+.game-live .bd li p{color:#999;font-size:0.22rem;height:0.4rem;line-height:0.4rem;overflow:hidden;}
+.game-live .bd li p span{display:inline-block;margin:0 0.16rem 0 0;float:left;}
+.game-live .bd li p span.tit-bt{color:#666;width:3.8rem;height:0.4rem;overflow:hidden;}
+.game-live .bd li p em{padding:0 0.1rem 0 0;color:#FF9313;}
+.game-live .bd li .txt{float:left;width:3rem;}
+.game-live .bd li h3{margin:0.1rem 0 0;font-size:0.26rem;max-width:5rem;height:0.48rem;line-height:0.48rem;overflow:hidden;}
+.game-live .bd li h3 img{display:inline-block;width:0.48rem;height:0.48rem;margin:0 0.2rem 0 0;vertical-align:-0.15rem;border-radius:2px;}
+.game-live .bd li .live,.game-live .bd li .reserve,.game-live .bd li .reserved{display:inline-block;position:absolute;top:0.26rem;right:0;width:1.4rem;height:0.56rem;line-height:0.56rem;text-align:center;color:#fff;font-size:0.24rem;border-radius:3px;}
+.game-live .bd li .live{background:#FF9313;}
+.game-live .bd li .reserve{color:#333;background:#F0F0F0;}
+.game-live .bd li .reserved{background:#04ADF6;}
+/*体育直播列表页入口模块样式*/
+.sport-liveList{width:7.5rem;background:#ffffff;margin:0 0 0.2rem;}
+.sport-liveList .sport-live .hd{width:98%;height:0.88rem;padding:0 1%;line-height:0.88rem;}
+.sport-liveList .sport-live .hd h3{float:left;font-size:0.3rem;color:#333;}
+.sport-liveList .sport-live .hd .list-more{float:right;font-size:0.26rem;color:#969696;padding-right:0;position:relative;margin-right:0.1rem;}
+.sport-liveList .sport-live .hd .list-more em{float:right;font-size:0.26rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.04%;width:0.24rem;height:0.26rem;margin:0.29rem 0 0 0.05rem;}
+.sport-liveList .sport-live .hd .more{float:right;width:3.28rem;height:0.65rem;line-height:0.65rem;font-size:0.26rem;color:#969696;overflow:hidden;}
+.sport-liveList .sport-live .hd .more .moreicon{float:left;display:block;width:0.22rem;height:0.24rem;margin:0.205rem 0 0;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.04%;}
+.sport-liveList .sport-live .hd .more .moreTitle{float:left;margin-right:0.06rem;width:3rem;height:auto;white-space:nowrap;overflow:hidden;text-align:right;}
+.sport-liveList .sport-live .bd{width:98%;padding:0 1%;}
+.sport-liveList .sport-live .bd li{position:relative;display:block;width:100%;padding:0;margin-bottom:0.2rem;}
+.sport-liveList .sport-live .bd li a{display:block;color:#666;}
+.sport-liveList .sport-live .bd .bpic{float:left;width:2rem;height:1.12rem;margin:0 0.24rem 0 0;}
+.sport-liveList .sport-live .bd li p{color:#333;font-size:0.22rem;height:0.4rem;line-height:0.4rem;overflow:hidden;}
+.sport-liveList .sport-live .bd li p span{display:inline-block;margin:0 0.16rem 0 0;float:left;}
+.sport-liveList .sport-live .bd li p span.tit-bt{width:4.8rem;height:0.4rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.sport-liveList .sport-live .bd li p span.corner{padding:0 0.1rem;}
+.sport-liveList .sport-live .bd li p span.sport{background-color:#4c4c4c;color:#ffd088;}
+.sport-liveList .sport-live .bd li p span.new-en{background-color:#e7b166;color:#fff;}
+
+.sport-liveList .sport-live .bd li p em{padding:0 0.1rem 0 0;color:#FF9313;}
+.sport-liveList .sport-live .bd li .txt{float:left;width:3rem;}
+.sport-liveList .sport-live .bd li h3{margin:0.1rem 0 0;font-size:0.26rem;max-width:5rem;height:0.48rem;line-height:0.48rem;overflow:hidden;color:#333;}
+.sport-liveList .sport-live .bd li h3 img{display:inline-block;width:0.48rem;height:0.48rem;margin:0 0.2rem 0 0;vertical-align:-0.15rem;border-radius:2px;}
+.sport-liveList .sport-live .bd li h3 span,.sport-liveList .sport-live .bd li h3 em{display:inline-block;}
+.sport-liveList .sport-live .bd li h3 em{margin:0 0.15rem;}
+.sport-liveList .sport-live .bd li .live,.sport-liveList .sport-live .bd li .reserve,.sport-liveList .sport-live .bd li .lookback,.sport-liveList .sport-live .bd li .reserved{display:inline-block;position:absolute;top:0.26rem;right:0;width:1.4rem;height:0.56rem;line-height:0.56rem;text-align:center;color:#fff;font-size:0.24rem;border-radius:3px;margin-right:0.1rem;}
+.sport-liveList .sport-live .bd li .live{background:#FF9313;}
+.sport-liveList .sport-live .bd li .reserve{color:#333;background:#F0F0F0;}
+.sport-liveList .sport-live .bd li .reserved{background:#04ADF6;}
+.sport-liveList .sport-live .bd li .lookback{color:#333;background:#F0F0F0;}
+
+
+/* 直播频道直播推荐 */
+.live-recommend .bd li{height:1.12rem;}
+.live-recommend .bd li h3,.live-recommend .bd li p{width:3rem;margin:0 0.22rem 0 0;overflow:hidden;}
+.live-recommend .bd li h3{height:0.36rem;line-height:0.36rem;}
+.live-recommend .bd li p{height:0.36rem;line-height:0.36rem;margin:0.1rem 0 0;color:#999;font-size:0.22rem;}
+
+/* 引导页 */
+.guideview{width:7.5rem;text-align:center;}
+.guideview h3{margin:0.5rem 0 0;font-size:0.48rem;}
+.guideview h3 i{display:inline-block;width:0.68rem;height:0.68rem;margin:0 0.2rem 0 0;vertical-align:-0.15rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:22.74% 83.94%;}
+.guideview h4{margin:0.44rem;font-size:0.3rem;}
+.guideview .btns{margin:5rem 0 0;}
+.guideview .btns a{display:inline-block;width:2rem;height:0.8rem;margin:0 0.6rem;line-height:0.8rem;font-size:0.26rem;border-radius:3px;background:#fff;}
+/* 直播列表*/
+#list1{margin-top:-0.2rem;}
+.local-tv a{display:block;}
+.local-tv dl{width:96%;padding:3% 0 2% 2.6%;margin:0;display:inline-block;vertical-align:top;border-bottom:1px solid #eee;}
+.local-tv dl dt{height:1.125rem;width:2rem;position:relative;float:left;overflow:hidden;}
+.local-tv dl dt img{width:100%;height:100%;display:block;margin-left:0px;background:url(../assets/spritesheet.png) no-repeat;background-size:37.03rem 30.82rem;background-position:61.39% 50.11%;}
+.local-tv dl dd{width:50%;height:auto;text-align:left;overflow:hidden;margin:0 2%;white-space:normal;float:left;}
+.local-tv dl dd span{width:96%;height:auto;position:relative;float:left;margin:0 0 2% 0;color:#000000;font-size:0.3rem;}
+.local-tv dl dd span div.littleIcon{float:left;width:0.35rem;height:0.35rem;display:table-cell;vertical-align:middle;text-align:center;margin:0 0.1rem 0 0;}
+.local-tv dl dd span img{width:0.35rem;height:auto;margin:auto 2% auto 2%;vertical-align:middle;}
+.local-tv dl dd p.txt1{width:96%;height:0.3rem;line-height:0.3rem;padding:0 2%;font-size:0.23rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block;padding-bottom:2%;}
+.local-tv dl dd p.txt2{width:96%;height:0.3rem;line-height:0.3rem;padding:0 2%;font-size:0.23rem;color:#666666;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:block;padding-bottom:2%;}
+/* 游戏直播列表*/
+.list-game p{background:#ebedee;height:0.4rem;}
+.list-game p span{margin:0 0 0 3%;font-size:0.21rem;color:#999999;text-overflow:ellipsis;white-space:nowrap;line-height:0.4rem;}
+.list-game dl{width:96%;margin:2.6% auto 2.6% 3%;display:inline-block;vertical-align:top;}
+.list-game dl dt{height:auto;width:10%;position:relative;float:left;}
+.list-game dl dt img{width:0.45rem;height:auto;display:block;}
+.list-game dl dd{width:85%;height:auto;text-align:left;overflow:hidden;white-space:normal;float:left;}
+.list-game dl dd p{width:50%;height:auto;position:relative;float:left;margin:0 0 2% 0;color:#000000;}
+.list-game dl dd span.txt1{width:70%;height:0.45rem;line-height:0.45rem;padding:0 2%;font-size:0.23rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;}
+.list-game dl dd span.txtlive{width:70%;height:0.45rem;line-height:0.45rem;padding:0 2%;font-size:0.23rem;color:#ffa100;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;}
+.list-game dl dd a.txt2{background:#ffa100;height:0.4rem;float:right;}
+.list-game dl dd a span{width:1.25rem;height:0.4rem;line-height:0.4rem;padding:0 2%;font-size:0.23rem;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;text-align:center;}
+
+/* 游戏直播列表*/
+.list-game p{background:#ebedee;height:0.4rem;}
+.list-game p span{margin:0 0 0 3%;font-size:0.21rem;color:#999999;text-overflow:ellipsis;white-space:nowrap;line-height:0.4rem;}
+.list-game dl{width:96%;margin:2.6% auto 2.6% 3%;display:inline-block;vertical-align:top;}
+.list-game dl dt{height:auto;width:10%;position:relative;float:left;}
+.list-game dl dt img{width:0.45rem;height:auto;display:block;}
+.list-game dl dd{width:85%;height:auto;text-align:left;overflow:hidden;white-space:normal;float:left;}
+.list-game dl dd p{width:50%;height:auto;position:relative;float:left;margin:0 0 2% 0;color:#000000;}
+.list-game dl dd span.txt1{width:70%;height:0.45rem;line-height:0.45rem;padding:0 2%;font-size:0.23rem;color:#000000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;}
+.list-game dl dd span.txtlive{width:70%;height:0.45rem;line-height:0.45rem;padding:0 2%;font-size:0.23rem;color:#ffa100;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;}
+.list-game dl dd a.txt2{background:#ffa100;height:0.4rem;float:right;}
+.list-game dl dd a span{width:1.25rem;height:0.4rem;line-height:0.4rem;padding:0 2%;font-size:0.23rem;color:#ffffff;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;text-align:center;}
+/*M站 首页 引导页 Start*/
+html,body{width:100%;height:100%;}
+body{position:relative;}
+.homeGuidePage{position:absolute;left:0;top:0;width:100%;height:100%;background:#6e6e6e;}
+.homeGuidePage .bigLogo{width:100%;text-align:center;padding-top:0.5rem;}
+.homeGuidePage .bigLogo .in{overflow:hidden;display:inline-block;}
+.homeGuidePage .bigLogo .in img{float:left;display:block;width:0.68rem;height:0.68rem;}
+.homeGuidePage .bigLogo .in .text{color:#ffffff;float:left;font-size:0.46rem;line-height:0.74rem;margin-left:0.15rem;font-family:"黑体"; /*font-family: "Microsoft Yahei";*/}
+.homeGuidePage .highDefi_outLine{width:100%;text-align:center;color:#f8f8f8;padding:0.38rem 0 0.7rem 0;font-family:"黑体";font-weight:normal;font-size:0.3rem;}
+.homeGuidePage .showPic{width:100%;text-align:center;}
+.homeGuidePage .showPic .showPicIn{width:6rem;height:4rem;background:#d8d8d8;display:inline-block;clear:both;}
+.homeGuidePage .showPic .showPicIn a{display:block;}
+.homeGuidePage .appOrSkip{width:100%;overflow:hidden;padding:1.2rem 1.25rem 0 1.25rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.homeGuidePage .appOrSkip .watchOnApp{float:left;width:2rem;height:0.8rem;border-radius:0.08rem;background:#ffffff;text-align:center;line-height:0.86rem;color:#0076dc;font-size:0.26rem;}
+.homeGuidePage .appOrSkip .skip{float:left;width:2rem;height:0.8rem;border-radius:0.08rem;background:#ffffff;text-align:center;line-height:0.86rem;color:#999999;font-size:0.26rem;margin-left:1rem; /*margin:;*/}
+.homeGuidePage #noMoreTips{position:absolute;left:5.6rem;top:9.5rem;margin:0.13rem 0 0 0;}
+.homeGuidePage #noMoreTips span{display:block;float:left;width:13px;height:13px;background:#ffffff;border-radius:100%;position:relative;}
+.homeGuidePage #noMoreTips span i{display:block;position:absolute;  left:4px;top:4px;width:5px;height:5px;background:#00aeef;border-radius:10px;display:none;}
+.homeGuidePage #noMoreTips p{float:left; font-size:13px;line-height:15px;color:#f5f5f5;margin-left:4px;}
+/*M站 首页 引导页 End*/
+
+
+
+/* 播放页 */
+.playbox{background:#fafafa;margin:0 auto;}
+.player{width:7.5rem;height:4.55rem;background:#000;}
+.openapp{width:7rem;width:100%;height:0.8rem;line-height:0.8rem;margin:0.28rem auto 0.2rem;text-align:center;font-size:0.3rem;color:#fff;background:#00afec;border-radius:0.05rem;}
+.player-info{position:relative;width:7rem;width:93.33%;padding:0.28rem 0.25rem;background:#fafafa;}
+.pop{position:absolute;top:0;left:0;width:6.5rem;height:2.2rem;padding:0.43rem 0.5rem;background:#fff;}
+.pop dl{height:2rem;}
+.pop .logo{float:left;width:1.34rem;height:1.34rem;margin:0 0.5rem 0 0;background:url(logo3.png);background-size:cover;}
+.pop dt{font-size:0.3rem;color:#323232;}
+.pop dd a{display:inline-block;width:1.9rem;height:0.7rem;line-height:0.7rem;margin:0 0.3rem 0 0;text-align:center;border-radius:5px;}
+.pop dd a:nth-child(1){color:#fff;background:#11B1F4;border:1px solid #11B1F4;}
+.pop dd a:nth-child(2){color:#333;background:#fff;border:1px solid #969696;}
+.pop .time{position:absolute;top:0.24rem;right:0.6rem;font-size:0.3rem;color:#11B1F4;}
+
+/*自适应媒体查询*/
+@media only screen and (max-width: 376px) {
+	.cp-sitebar.play h3 {color: #666464;}
+	.bdsharebuttonbox {margin-left: 55%;}
+	.cp-sitebar.play h3 {color: #666464;  font-size: 0.3rem;}
+	.cp-sitebar.play h3 a {font-size: 0.3rem;}
+	.cp-sitebar.play .AD_downlink {margin-left: 3%;}
+	.cp-sitebar.play .AD_downlink a { color: #F44336;font-size: 0.3rem;}
+}
+@media only screen and (max-width: 321px) {
+	.cp-sitebar.play h3 {color: #666464;  font-size: 0.3rem;}
+	.cp-sitebar.play h3 a {font-size: 0.3rem;}
+	.cp-sitebar.play .AD_downlink {margin-left: 3%;}
+	.cp-sitebar.play .AD_downlink a { color: #F44336;font-size: 0.3rem;}
+	.bdsharebuttonbox {margin-left: 46%;}
+}
+
+
+
+
+
+/* 体育vip付费视频遮罩提示 */
+.p-video-sport-vip{position:relative;height:100%;width:100%;}
+.p-video-sport-vip span{display:inline;}
+.p-video-sport-vip .content{position:absolute;color:#FFF;width:100%;text-align:center;}
+.p-video-sport-vip .content .tip1{margin:8% 0;font-size:.35rem;}
+.p-video-sport-vip .content .tip2{font-size:.25rem;margin:.5rem 0;}
+.p-video-sport-vip .content .download{display:inline-block;font-size:13px;background-color:#ff9313;color:#fff;padding:0.15rem 0.2rem;border-radius:2px;}
+.p-video-sport-vip .content .orange{color:#ff9313}
+.p-video-sport-vip .bg{display:block;position:absolute;height:100%;width:100%;left:0;top:0;}
+
+/* 评论 */
+
+.sharebox{position:fixed;left:0;bottom:0;width:7.5rem;text-align:center;background:#fff;z-index:10000;}
+.sharebox li{-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;margin:0.35rem 0 0;text-align:center;}
+.sharebox li a{display:block;font-size:0.24rem;color:#000;}
+.sharebox li i{display:block;width:1.1rem;height:1.1rem;margin:0 auto 0.1rem;}
+.sharebox li .s1{background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:54.92% 51.05%;}
+.sharebox li .s2{background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:48.76% 51.05%;}
+.sharebox li .s3{background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:36.45% 51.05%;}
+.sharebox li .s4{background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:42.61% 51.05%;}
+.sharebox .cancel{display:block;margin:0.22rem 0 0;padding:0.22rem 0;font-size:0.24rem;color:#34c0ef;border-top:1px solid #34c0ef;}
+.sharebox .wxshare{position:absolute;top:-8rem;left:0.75rem;width:5rem;padding:0.5rem;font-size:0.22rem;background:#fff;}
+.sharebox .wxshare .close{position:absolute;top:0.35rem;right:0.5rem;font-size:0.5rem;color:#666;}
+.sharebox .wxshare h4{font-size:0.3rem;color:#666;}
+.sharebox .wxshare img{display:block;width:4rem;height:4rem;margin:0.3rem auto;}
+.sharebox .wxshare p{width:4.5rem;margin:0 auto;}
+.adv{margin:0.1rem 0 0;}
+.adv img{display:block;width:7.5rem;height:1.6rem;}
+.sharetip{position:fixed;top:0;left:0;width:7.5rem;height:100%;background:rgba(0,0,0,0.5);z-index:10;}
+.sharetip p{position:absolute;top:0.28rem;right:0.5rem;width:3.74rem;height:2.94rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:41.67% 38.56%;}
+
+/*体育播放页开始*/
+.main-wrap{width:100%;background:#ebecee;}
+
+.appdownload{position:fixed;width:5.4rem;height:3.2rem;left:1.05rem;top:2.72rem;background:#fff;z-index:10;}
+.appdownload p{margin:0.65rem 0 0;font-size:0.3rem;text-align:center;}
+.appdownload p span{margin:0.1rem 0 0;font-size:0.26rem;color:#666;}
+.appdownload .btns{position:absolute;left:0;bottom:0;height:1.02rem;border-top:1px solid #dcdcdc;}
+.appdownload .btns a{box-sizing:border-box;float:left;width:2.7rem;height:1.02rem;line-height:1.02rem;text-align:center;font-size:0.3rem;}
+.appdownload .btns a:nth-child(1){color:#969696;border-right:1px solid #dcdcdc;}
+.appdownload .btns a:nth-child(2){color:#04ADF6;}
+.fullscreen .m_header,.fullscreen .main-wrap,.fullscreen .openapp,.fullscreen .p-gotop.show,.fullscreen .player-info{display:none;}
+.fullscreen .appcontainer{margin-top:0;}
+
+
+/*模块标题文字*/
+.sport-live .hd h3{font-size:0.30rem;}
+
+/*直播前 直播后载入默认背景页面*/
+.live_bg{width:7.5rem;height:100%;background:url(../assets/live_bg_con.png) no-repeat;background-size:cover;}
+.liveend{width:7.5rem;height:8.5rem;}
+.live_bg .hd{width:7rem;padding:0 0.25rem;background:#fff;height:0.8rem;margin:0 auto;overflow:hidden;}
+.live_bg .hd h3{display:block;width:1.5rem;height:0.8rem;text-indent:-9999px;	/*background: url("live_bg_logo.png") no-repeat left center;
+		background-size: contain;*/}
+.live_bg .bd{width:7.5rem;min-height:7.8rem;overflow:hidden;}
+.live_bg .bd .live-con{width:6.8rem;height:6.59rem;margin:0.6rem auto 0;background:url(../assets/live_con_bg.png) no-repeat;background-size:cover;}
+.live_bg .bd .live-con .con_hd,.live_bg .bd .live-con .live_PPlive{width:6.3rem;margin:0 auto;height:0.8rem;line-height:0.8rem;font-size:0.3rem;color:#232323;}
+.live_bg .bd .live-con .live_PPlive span{text-align:center;padding:0 0.1rem;}
+
+.live_bg .bd .live-con span.corner{position:absolute;right:0.35rem;top:1.4rem;padding:0 0.2rem;height:0.4rem;line-height:0.4rem;text-align:center;font-size:0.22rem;display:block;}
+.live_bg .bd .live-con span.sport{background-color:#4c4c4c;color:#ffd088;}
+.live_bg .bd .live-con span.new-en{background-color:#e7b166;color:#fff;}
+
+.live_bg .bd .live-con .con_hd span{float:left;display:inline-block;padding:0 0.1rem;}
+.live_bg .bd .live-con .con_hd span.lun-list{padding-left:0.15rem;width:3.6rem;height:0.8rem;overflow:hidden;}
+.live_bg .bd .live-con .con_hd span.con_time{float:right;}
+.live_bg .bd .live-con .con_in_against{width:6.0rem;padding:0 0.4rem;height:3.89rem;margin:0 auto;overflow:hidden;}
+.live_bg .bd .live-con .con_in_against .con_in{float:left;width:1.74rem;height:2.25rem;margin:0.82rem 0;overflow:hidden;}
+.live_bg .bd .live-con .con_in_against .con_in.against_vs,.live_bg .bd .live-con .con_in_against .con_in.against_score{width:2.52rem;}
+.live_bg .bd .live-con .con_in_against .con_in.against_right{float:right;}
+.live_bg .bd .live-con .con_in_against .con_in img{display:block;width:1.74rem;height:1.74rem;margin:0 auto;}
+.live_bg .bd .live-con .con_in_against .con_in .nopic{border-radius:10%;}
+.live_bg .bd .live-con .con_in_against .con_in span{display:block;width:100%;height:0.5rem;line-height:0.5rem;font-size:0.28rem;text-align:center;color:#fff;margin-top:0.1rem;}
+.live_bg .bd .live-con .con_in_against .con_in span.vs{margin-top:.5rem;margin-bottom:0.3rem;font-size:0.5rem;}
+.live_bg .bd .live-con .con_in_against .con_in span.vs_txt{color:#fed330;font-size:0.3rem;}
+.live_bg .bd .live-con .con_in_against .con_in span.vs_txt i{display:inline-block;width:0.4rem;height:0.4rem;background:url('http://sr4.pplive.com/cms/19/29/c585adb3ff3cc0dc15539ba2ec2db3b3.png') no-repeat;background-size:cover;margin-right:0.1rem;margin-top:0.05rem;vertical-align:top;}
+
+
+/*比分*/
+.liveend .bd .liveend-con .con_in_against .against_score span{height:2.25rem;line-height:2rem;font-size:0.6rem;margin:0;}
+.live_bg .con_in_PP{width:6.0rem;padding:0 0.4rem;height:3.89rem;margin:0 auto;overflow:hidden;}
+.live_bg .con_in_PP p{width:6rem;height:1.44rem;overflow:hidden;line-height:0.48rem;font-size:0.4rem;color:#fff;margin-top:1.5rem;text-align:center;}
+
+/*直播倒计时*/
+.con_bd{width:6.8rem;height:1.9rem;margin:0 auto;overflow:hidden;}
+.live_bg .countdown{width:6.8rem;height:1.9rem;margin:0 auto;overflow:hidden;}
+.live_bg .countdown p.txt{width:2.2rem;height:0.95rem;font-size:0.22rem;text-align:center;line-height:0.95rem;overflow:hidden;margin:0 auto;color:#006ea5;}
+.live_bg .countdown .count{width:4rem;border-bottom:1px solid #006ea5;margin:0.25rem auto 0;position:relative;}
+.live_bg .countdown .count .tt{font-size:0.24rem;overflow:hidden;height:0.4rem;line-height:0.4rem;background:#e4fcff;position:absolute;left:50%;margin-left:-1.76rem;top:-0.2rem;color:#006ea5;padding:0 0.1rem;}
+.live_bg .countdown .count .tt span{display:inline-block;height:0.4rem;width:0.3rem;text-align:center}
+.live_bg .countdown .count .tt span.t{background:#006ea5;color:#fff;width:0.4rem;}
+
+/*倒计时//比赛已结束*/
+.liveend_con p{width:2.3rem;height:1.95rem;font-size:0.28rem;text-align:center;line-height:1.95rem;overflow:hidden;margin:0 auto;color:#006ea5;}
+
+/*付费直播*/
+.live_bg .md{width:5rem;margin:0 auto;}
+.live_bg .md .pay-tit{width: 100%;height: 0.6rem;line-height: 0.6rem;overflow: hidden;font-size: 0.32rem;color: #fafafa;text-align: center;font-weight: 600;}
+.live_bg .md .pay-tit span{ display:inline;color: #fdaa0d;}
+.live_bg .md .pay-tit .pay-ico{display:inline-block;width:0.6rem;height:0.6rem;margin-right:0.15rem;vertical-align:top;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:34.13% 83.6%;}
+.live_bg .md .pay-btn{display:block;width:3.25rem;height:1.3rem;background:#fca918;font-size:0.32rem;color:#fafafa;line-height:1.3rem;text-align:center;overflow:hidden;border-radius:3px;margin:0.25rem auto 0.2rem;}
+.live_bg .md .s-font{ width: 100%;height: 0.3rem;line-height: 0.3rem;overflow: hidden;font-size: 0.22rem;color: #fafafa;text-align: center;margin-top: 0.1rem;}
+/*体育 游戏   直播列表页样式*/
+.live-list{width:7.5rem;background:#fafafa;}
+.live-list .hd{width:7.02rem;height:0.88rem;padding:0 0.24rem;line-height:0.88rem;border-bottom:1px solid #EBEBEB;overflow:hidden;text-align:center;position:relative;position:fixed;background-color:#FAFAFA;z-index:99;}
+.live-list .hd h3{font-size:0.32rem;color:#333333;font-weight:600;}
+.live-list .hd .more{float:right;width:3.28rem;height:0.65rem;line-height:0.65rem;font-size:0.26rem;color:#969696;overflow:hidden;}
+.live-list .hd .more .moreicon{float:left;display:block;width:0.22rem;height:0.24rem;margin:0.205rem 0 0;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.04%;}
+.live-list .hd .more .moreTitle{float:left;margin-right:0.06rem;width:3rem;height:auto;white-space:nowrap;overflow:hidden;text-align:right;}
+.live-list .bd.first-child{padding-top:.88rem;}
+.live-list .bd h3.blank{background-color:#ebedee;}
+.live-list .bd h3.date{width:7.5rem;height:0.7rem;background:#ebebeb;font-size:0.26rem;text-align:center;line-height:0.7rem;color:#323232;margin-bottom:0.02rem;}
+.live-list .bd h3.fixed{position:fixed;z-index:99;top:0.88rem;}
+.live-list .bd h3 span{display:inline-block;margin-right:0.15rem}
+.live-list .bd ul{background:#ebebeb;}
+.live-list .bd ul li.game-list{width:7rem;height:1rem;line-height:1rem;overflow:hidden;padding:0 0.25rem;font-size:0.26rem;background:#fff;}
+.live-list .bd ul li .time,.live-list .bd ul li .con,.live-list .bd ul li .Btn{float:left;}
+.live-list .bd ul li .time{display:inline-block;width:0.7rem;color:#646464;margin-right:0.2rem;}
+.live-list .bd ul li .con{width:auto;height:1rem;line-height:1rem;color:#646464;overflow:hidden;}
+.live-list .bd ul li .con *{float:left;}
+.live-list .bd ul li .con img{display:block;width:0.48rem;height:0.48rem;margin-right:0.12rem;margin-top:0.24rem;}
+.live-list .bd ul li .con  p{display:inline-block;max-width:3.5rem;line-height:1rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.live-list .bd ul li .Btn{width:1.4rem;height:0.56rem;text-align:center;line-height:0.56rem;float:right;border-radius:4px;margin-top:0.2rem;color:#fff;}
+.Btn:hover,.Btn:active,.Btn:link,.Btn{color:#ffffff!important;}
+
+/*已結束*/
+.live-list .bd ul li.over .Btn{background:#D2D2D2;}
+.live-list .bd ul li.over .Btn.disabled{background:#D2D2D2;}
+
+/*回看*/
+.live-list .bd ul li.back .Btn{background:#04ADF6;}
+.live-list .bd ul li.live .Btn{background:#FF9313;}
+
+/*未开始*/
+.live-list .bd ul li.ready .Btn{background:#D2D2D2;}
+
+/*今天*/
+.live-list .bd h3.date-now{background:#04ADF6;color:#fff;}
+
+/*体育直播列表页*/
+.sports-live-list .bd ul li{width:7rem;height:auto;line-height:1.8rem;overflow:hidden;padding:0 0.25rem;font-size:0.26rem;position:relative;background:#fafafa;margin-bottom:0.02rem;position:relative;}
+.sports-live-list .bd ul li.premiership .li_top,.sports-live-list .bd ul li.premiership .li_mid,.sports-live-list .bd ul li.premiership .li_btm{height:0.6rem;overflow:hidden;line-height:0.6rem;text-align:center;position:relative;font-size:0.26rem;color:#323232;}
+.sports-live-list .bd ul li.premiership .li_btm{height:auto;line-height:0.9rem}
+.sports-live-list .bd ul li.premiership .li_mid em,.sports-live-list .bd ul li.F1event .li_mid em{height:0.3rem;line-height:0.3rem;font-size:0.26rem}
+.sports-live-list .bd ul li.premiership .li_top .txt_bt{display:inline-block;font-size:0.22rem;color:#A3A3A3;position:absolute;left:0;max-width:2.5rem;overflow:hidden;}
+.sports-live-list .bd ul li.premiership .li_btm .result_left,.sports-live-list .bd ul li.premiership .li_btm .result_right{float:left;width:2.8rem;overflow:hidden;}
+.sports-live-list .bd ul li.premiership .li_btm .result_left em,.sports-live-list .bd ul li.premiership .li_btm .result_right em{display:inline-block;max-width:1.8rem;float:left;font-size:0.28rem;height:0.9rem;overflow:hidden;}
+.sports-live-list .bd ul li.premiership .li_btm .result_right em{float:right;}
+.sports-live-list .bd ul li.premiership .li_btm .result_left .win,.sports-live-list .bd ul li.premiership .li_btm .result_right .win{display:inline-block;width:0.25rem;height:0.25rem;line-height:0.25rem;background:#FF6565;border-radius:0.04rem;font-style:normal;color:#fff;font-size:0.2rem;margin:0.28rem 0.05rem 0 0;padding:0.04rem;float:right;}
+.sports-live-list .bd ul li.premiership .li_btm .result_left .win{float:left;margin-left:0.05rem}
+.sports-live-list .bd ul li.premiership .li_btm .result_left span{float:left;}
+.sports-live-list .bd ul li.premiership .li_btm .result_left img,.sports-live-list .bd ul li.premiership .li_btm .result_right img{display:block;width:0.55rem;height:0.55rem;margin-top:0.2rem}
+.sports-live-list .bd ul li.premiership .li_btm .result_left img{float:right;}
+.sports-live-list .bd ul li.premiership .li_btm .result_right{float:right;}
+.sports-live-list .bd ul li.premiership .li_btm .result_right span{float:right;}
+.sports-live-list .bd ul li.premiership .li_btm .result_right img{float:left;}
+.sports-live-list .bd ul li.premiership .li_btm .result_mid{display:inline-block;float:left;width:1.3rem;text-align:center;color:#C8C8C8;}
+.sports-live-list .bd ul li.premiership .li_btm .result_mid code{display:inline-block;background:#C8C8C8;border-radius:0.04rem;padding:0.05rem;line-height:normal;color:#fff;}
+.sports-live-list.bd ul li.live .li_btm .result_mid{display:inline-block;float:left;width:2rem;text-align:center;color:#FD5151;}
+.sports-live-list .bd ul li.live .li_btm .result_mid code{background:#FD5151;color:#fff;}
+.sports-live-list .bd ul li .li_btm .result_mid .red-play-vs{display:inline-block;width:0.4rem;height:0.4rem;margin-top:0.27rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:45.79% 73.15%;}
+.sports-live-list .bd ul li.F1event .li_top .txt_bt{display:inline-block;max-width:2.5rem;overflow:hidden;font-size:0.22rem;color:#A3A3A3;position:absolute;left:0;font-family:PingFang-SC-Light;}
+.sports-live-list .bd ul li.F1event .li_top,.sports-live-list .bd ul li.F1event .li_mid,.sports-live-list .bd ul li.F1event .li_btm{height:0.6rem;overflow:hidden;line-height:0.6rem;text-align:center;position:relative;font-size:0.26rem;color:#323232;}
+.sports-live-list .bd ul li.F1event .li_btm{max-height:0.9rem;height:auto;line-height:0.45rem;font-size:0.26rem;color:#323232;margin-bottom:0.15rem;}
+.sports-live-list .bd ul li.F1event .li_mid{height:0.3rem;line-height:0.3rem;font-size:0.22rem;color:#969696;margin:0.08rem auto}
+.sports-live-list .bd ul li.live .li_btm{color:#FF9313;}
+
+.sports-live-list .bd ul li span.corner{position:absolute;right:0;top:0;padding:0 0.2rem;height:0.4rem;line-height:0.4rem;text-align:center;font-size:0.22rem;display:block;}
+.sports-live-list .bd ul li span.sport,.sports-live-list .bd ul li.live span.sport{background-color:#4c4c4c;color:#ffd088;}
+.sports-live-list .bd ul li span.new-en,.sports-live-list .bd ul li.live span.new-en{background-color:#e7b166;color:#fff;}
+
+/*空态*/
+.empty-tip{text-align:center;padding:4.7rem 0;color:#999;}
+
+/*直播*/
+.live-list .bd ul li.live  span,.live-list .bd ul li.live em,.live-list .bd ul li.live p{color:#FF9313;}
+
+/*付费角标*/
+.sports-live-list .bd ul li.pay .pay-icon{display:inline-block;position:absolute;top:0.01rem;right:0;width:.8rem;height:.8rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:7.09% 92.25%;}
+.trailer{width:100%;height:4.97rem;margin:0 0 0.2rem 0;}
+.trailer .hd{width:98%;height:0.68rem;background-color:white;font-size:0.3rem;color:#323232;line-height:0.68rem;padding:0 1%;}
+.trailer .bd{width:100%;height:4.29rem;background-color:white;overflow:hidden;}
+.trailer .bd ul{width:99999999px;height:4.29rem;}
+.trailer .bd ul li{position:relative;float:left;width:2rem;height:4.29rem;}
+.trailer .bd .time{width:100%;height:0.58rem;border-bottom:1px solid #DCDCDC;line-height:0.58rem;font-size:0.22rem;text-align:center;color:#323232;}
+.trailer .bd .point{position:absolute;width:0.12rem;height:0.12rem;border-radius:50%;background-color:#DCDCDC;top:0.52rem;left:0.92rem;}
+.trailer .bd .pic{width:100%;border-right:1px solid white;position:absolute;top:0.82rem;height:2.66rem;}
+.trailer .bd .pic img{width:98.5%;height:100%;}
+.trailer .bd .pic .cornermark{height:0.32rem;line-height:0.32rem;font-size:0.22rem;padding:0 0.08rem;position:absolute;top:0;right:0;overflow:hidden;color:white;}
+.trailer .bd .pic .trail{background-color:#FF9313;}
+.trailer .bd .pic .vip{background-color:#FD5151;}
+.trailer .bd li .title{height:0.73rem;color:#323232;width:1.8rem;overflow:hidden;padding-top:0.08rem;padding:0.08rem 3.74% 0 3.74%;position:absolute;bottom:0;font-size:0.26rem;}
+
+/*H5个人中心页面*/
+.personal_center{width:7.5rem;height:4.12rem;margin-top:0.24rem;}
+.personal_center .content{width:100%;height:3rem;background-color:white;}
+.personal_center .content .top{width:7.08rem;margin-left:0.4rem;height:1.8rem;line-height:1.8rem;border-bottom:1px solid #dcdcdc;}
+.personal_center .content .top img{width:1.32rem;height:1.32rem;border-radius:50%;margin:0.24rem 0.2rem;float:right;margin-right:0.5rem;}
+.personal_center .content .title{font-size:0.3rem;float:left;height:100%;color:#323232;}
+.personal_center .content .bottom{width:7.08rem;margin-left:0.4rem;height:1.2rem;line-height:1.2rem;}
+.personal_center .content .bottom .nickname{height:1.2rem;float:right;margin-right:0.5rem;color:#969696;}
+.personal_center .logout{width:100%;height:0.94rem;background-color:white;margin-top:0.14rem;}
+.personal_center .logout p{width:100%;height:0.94rem;line-height:0.94rem;text-align:center;font-size:0.3rem;color:#04adf6;}
+
+/*添加到主屏幕提示*/
+.tips{width:4.32rem;height:1.668rem;z-index:500;position:fixed;bottom:0.1rem;left:50%;margin-left:-2.16rem;background:url(../assets/safari_box.png) no-repeat;background-size:cover;}
+.tips img{width:1.08rem;height:1.08rem;float:left;margin:0.254rem 0.15rem;}
+.tips p{width:2.84rem;height:1.08rem;margin:0.254rem 0.05rem;font-size:0.27rem;float:left;}
+.tips p span{line-height:0.44rem;overflow:hidden;display:inline-block;height:0.44rem;}
+.tips p span i{display:inline-block;margin-left:0.1rem;width:0.32rem;height:0.38rem;background:url(../assets/spritesheet.png) no-repeat;background-size:29.52rem 24.35rem;background-position:64.82% 39.86%;}
+.tips .close{width:0.48rem;height:0.48rem;position:absolute;top:0.1rem;right:0.1rem;background:url(../assets/spritesheet.png) no-repeat;background-size:26.66rem 24.66rem;background-position:26.94% 69.71%;}
+
+/*个人中心登录后绑定手机*/
+.myprofile .top{width:7rem;height:.88rem;padding:0 0.25rem;text-align:center;overflow:hidden;position:relative;background:#F8F8F8;}
+.myprofile .top .goback{width:.48rem;height:.48rem;position:absolute;top:50%;left:0.25rem;margin-top:-.24rem;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:42.77% 73.44%;}
+.myprofile .top .login-tit{line-height:.88rem;text-align:center;font-size:.32rem;color:#333333;}
+
+/*第三方登录后*/
+.myprofile .contain{width:7.5rem;padding:0;background:#fafafa;}
+.myprofile .contain form{margin:0rem 0 0 0;}
+.myprofile .contain form ul{list-style-type:none;padding-left:0!important;background:#ebedee;}
+.myprofile .contain form ul li{position:relative;overflow:hidden;background:#FAFAFA;width:7rem;margin:0 auto;padding:0 .25rem;}
+.myprofile .contain form .ipt{overflow:hidden;margin-bottom:0rem;border-bottom:1px solid #dcdcdc;}
+.myprofile .contain form .ipt.list-pic{background:#fafafa;margin-bottom:.2rem;}
+.myprofile .contain form .ipt.list-pass{border:none;}
+.myprofile .contain form .ipt input{background:#fafafa;width:100%;}
+.myprofile .contain form .addon{position:absolute;top:0rem;padding:.35rem 0;color:#646464;font-size:0.3rem;vertical-align:middle;text-align:justify;}
+.myprofile .contain form .operact{position:absolute;width:.38rem;right:.4rem;height:.38rem;margin-top:.25rem;background-clip:content-box;}
+.myprofile .contain form .operact.get-security{text-decoration:none;width:auto;color:#00C3ED!important;height:0.85rem;line-height:0.85rem;font-size:0.30rem;display:block;text-align:right;margin-top:.2rem;top:0;right:.1rem;padding:0rem 0.2rem;}
+.myprofile .ipt .operact.layer.hidden{display:none!important;}
+.myprofile .ipt .operact.layer{width:auto!important;top:0;margin-top:.1rem;height:.85rem;line-height:.85rem;background-clip:padding-box;background-color:#fafafa;color:#969696!important;right:.1rem;padding:0rem 0.2rem;font-size:.3rem;}
+.myprofile .contain form .ico{background-image:url(modules/login-register/icons.png);background-size:2rem;}
+.myprofile .contain form .clear-text{display:none;}
+.myprofile .contain form .ipt input{color:#646464;padding:0.35rem 0rem 0.35rem 1.2rem;outline:none;font-size:0.3rem;box-sizing:border-box;-webkit-appearance:none!important;border-radius:0!important;float:left;}
+.myprofile .contain form .list-pass input{padding-right:1.7rem;}
+.myprofile .contain form .prompt{font-size:.24rem;color:#FF2525;height:.32rem;line-height:.32rem;position:relative;padding:.3rem 0 .5rem .32rem;background:#eaeced;}
+.myprofile .contain form .prompt i{float:left;margin-right:.1rem;vertical-align:top;margin-top:0;height:.32rem;width:.32rem;background:url(../assets/spritesheet.png) no-repeat;background-size:34.32rem 31.38rem;background-position:82.34% 68.95%;}
+.myprofile .contain form .btn{background:#eaeced;margin:0;width:6.5rem;padding:0 .5rem;}
+.myprofile .contain form .btn .end-bound-btn{box-sizing:border-box;text-align:center;width:6.5rem;display:inline-block;height:.9rem;margin:0 auto;vertical-align:top;padding:0.25rem 0;background:#DFE2E3;color:#FFFFFF;border-width:0;outline:none;border-radius:4px!important;font-size:0.34rem;color:#C8C8C8;}
+.myprofile .contain form .btn #bound-btn.changecolor{box-sizing:border-box;text-align:center;width:6.5rem;display:inline-block;height:.9rem;margin:0 auto;vertical-align:top;padding:0.25rem 0;border-width:0;outline:none;border-radius:4px!important;font-size:0.34rem;color:#fff;background:#04ADF6;}
+input[type="button"],input[type="submit"],input[type="reset"]{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.myprofile .contain form .btn .end-bound-btn.active{background-color:#04ADF6;color:#fff;}
+.myprofile form.real .list-submit-fake{display:none!important;}
+.myprofile  #bound-btn.curblue{background:#04adf6;color:#fff;}
+.myprofile form.real .list-submit{display:block!important;}
+.myprofile .contain.eml form .ipt.list-code{border:none;}
+
+/**/
+.mypic{width:100%;height:2.51rem;text-align:center;background:#FAFAFA;box-shadow:0 1px 0 0 #DCDCDC;}
+.mypic a{display:block;width:100%;height:100%;}
+.mypic a .con{width:1.44rem;height:1.44rem;margin:0 auto;position:relative;}
+.mypic a .con img{width:1.44rem;height:1.44rem;border-radius:1.44rem;position:absolute;top:50%;left:50%;margin-top:-.72rem;margin-left:-.72rem;}
+.mypic a .con i{display:block;width:.58rem;height:.58rem;position:absolute;bottom:0;right:0;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:37.74% 83.52%;}
+.myprofile .contain form .ipt.list-phone{height:1.1rem;}
+.myprofile .contain form .ipt.list-nickname span,.myprofile .contain form .ipt.list-birthday span,.myprofile .contain form .ipt.list-gender span,.myprofile .contain form .ipt.list-phone span{height:1.1rem;margin-left:2rem;line-height:1.1rem;}
+.myprofile .contain form .ipt.list-nickname span{font-size:.34rem;color:#000!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.myprofile .contain form .ipt.list-phone{border:none;}
+.myprofile .contain form .btn.list-logout{position:fixed;bottom:0;width:7.5rem;margin:0;padding:0;}
+
+/*.myprofile .contain form .btn.list-logout input.active { background: #FF9313; color: #fff; border-radius: 0; }*/
+.myprofile .contain form .btn.list-logout .active{background:#FF9313;color:#fff;border-radius:0;padding:.25rem 0;font-size:.34rem;text-align:center;}
+.myprofile .contain form .ipt.list-phone .operact.get-security{width:2rem!important;font-size:.26rem;color:#969696!important;padding-right:.5rem;z-index:100;}
+.myprofile .contain form .ipt.list-phone .operact.get-security i{display:block;width:.4rem;height:.4rem;margin-top:-.2rem;position:absolute;top:50%;right:0;background:url(../assets/spritesheet.png) no-repeat;background-size:22.22rem 20.55rem;background-position:74.70% 69.24%;}
+.myprofile .contain form .ipt.list-phone input{font-size:.32rem;color:#323232;}
+.myprofile .mark{position:absolute;top:0;width:7.5rem;height:100%;background:rgba(0,0,0,.5);}
+.myprofile .mark .markin{width:6rem;z-index:150;height:3.44rem;margin:0 auto;background:#FFFFFF;border-radius:.2rem;font-size:.3rem;color:#323232;overflow:hidden;position:absolute;top:50%;left:50%;margin-top:-1.72rem;margin-left:-3rem;}
+.myprofile .mark .markin p{width:4.86rem;height:.84rem;line-height:.42rem;margin:.74rem auto;text-align:center;}
+.myprofile .mark .markin a{display:block;width:5.1rem;height:.8rem;background:#04ADF6;border-radius:.18rem;color:#fff;text-align:center;line-height:.8rem;margin:0 auto;}
+.myprofile .mark .markin .close-btn{display:block;width:.4rem;height:.4rem;position:absolute;top:0.15rem;right:.15rem;background:url(../assets/spritesheet.png) no-repeat;background-size:26.66rem 24.66rem;background-position:26.94% 69.71%;}
+.binding-mobile .mark .markin .tit{display:block;font-style:normal;font-size:.32rem;width:3rem;height:.4rem;position:absolute;top:0.5rem;left:50%;margin-left:-1.5rem;font-weight:600;text-align:center;}
+.binding-mobile .mark .markin p{line-height:3rem;margin:0 auto;text-align:center;height:3rem;}
+.binding-mobile .mark .markin a{position:absolute;top:2.4rem;left:50%;margin-left:-2.55rem;}

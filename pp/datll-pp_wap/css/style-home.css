@@ -1,0 +1,1314 @@
+/**
+ * ...
+ * @author pelexiang, xiangfeimeng, sandyhong, chengxiangli, tengxia, olivefu, chunbolv, junqingan
+ * Wed Oct 25 2017 20:14:24 GMT+0800 (CST)
+ */
+
+.plist2 .bd li .covericon[data-v-098faf7e], .plist3 .bd li .covericon[data-v-098faf7e] {
+	right: 0
+}
+.plist[data-v-098faf7e] {
+	width: 7.5rem;
+	width: 100%;
+	margin: 0 0 .2rem;
+	color: #333;
+	background: #fff;
+	overflow: hidden
+}
+.plist.plist2[data-v-098faf7e] {
+	margin-top: .2rem!important
+}
+.plist .hd[data-v-098faf7e] {
+	width: 100%;
+	padding: 1%
+}
+.plist .hd[data-v-098faf7e], .plist .hd h3[data-v-098faf7e] {
+	height: .65rem;
+	line-height: .65rem
+}
+.plist .hd h3[data-v-098faf7e] {
+	float: left;
+	width: 3.97rem;
+	font-size: .3rem;
+	overflow: hidden
+}
+.plist .hd h3 a[data-v-098faf7e] {
+	color: #333
+}
+.plist .hd h3 i[data-v-098faf7e] {
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	margin: 0 .02rem 0 0;
+	vertical-align: -3px
+}
+.plist .hd .more[data-v-098faf7e] {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	margin-right: .1rem;
+	overflow: hidden
+}
+.plist .hd .more .moreicon[data-v-098faf7e] {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.plist .hd .more .moreTitle[data-v-098faf7e] {
+	width: 3rem
+}
+.plist .hd .more .changeTitle[data-v-098faf7e], .plist .hd .more .moreTitle[data-v-098faf7e] {
+	float: left;
+	margin-right: .06rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.plist .hd .more .changeTitle[data-v-098faf7e] {
+	width: 2.98rem
+}
+.plist .hd .more .changeIcon[data-v-098faf7e] {
+	float: left;
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 64.69% 69.07%
+}
+.plist .hd .ci[data-v-098faf7e] {
+	float: left;
+	width: .3rem;
+	height: .3rem;
+	display: block;
+	margin: .16rem .06rem
+}
+.plist .bd ul[data-v-098faf7e] {
+	width: 7.6rem;
+	width: 110%
+}
+.plist .bd li[data-v-098faf7e] {
+	display: inline-block;
+	vertical-align: top;
+	width: 3.74rem;
+	min-height: 2.5rem;
+	margin: 0 0 .2rem;
+	border-right: .03rem solid #fff
+}
+.plist .bd li a[data-v-098faf7e] {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #fff
+}
+.plist .bd li img[data-v-098faf7e] {
+	display: block;
+	width: 3.73rem;
+	height: 2.1rem
+}
+.plist .bd li .mask[data-v-098faf7e] {
+	position: absolute;
+	top: 1.7rem;
+	left: 0;
+	width: 96%;
+	padding: 0 2%;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.02), rgba(0,0,0,.3) 60%);
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .24rem;
+	overflow: hidden
+}
+.plist .bd li .mask .score[data-v-098faf7e] {
+	color: #ff9313
+}
+.plist .bd li h4[data-v-098faf7e] {
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .26rem;
+	color: #333
+}
+.plist .bd li .txt[data-v-098faf7e], .plist .bd li h4[data-v-098faf7e] {
+	width: 96%;
+	padding: 0 2%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block
+}
+.plist .bd li .txt[data-v-098faf7e] {
+	height: .3rem;
+	line-height: .3rem;
+	font-size: .23rem;
+	color: #969696
+}
+.plist .bd li .txt i[data-v-098faf7e] {
+	display: inline-block;
+	width: .22rem;
+	height: .22rem;
+	margin: 0 .05rem 0 0;
+	vertical-align: -2px;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 80.5% 69.01%
+}
+.plist .bd li .covericon[data-v-098faf7e] {
+	position: absolute;
+	width: auto;
+	top: 0;
+	right: .009rem;
+	padding: 0 .1rem;
+	height: .32rem;
+	line-height: .32rem;
+	text-align: center;
+	color: #fff;
+	font-size: .2rem;
+	background: #ef681f
+}
+.plist2 .bd li .covericon, .plist3 .bd li .covericon {
+	right: 0
+}
+.plist .bd ul {
+	width: 7.6rem;
+	width: 110%
+}
+
+.plist2 .bd ul {
+	width: 7.62rem;
+	background: #fff
+}
+.plist2 .bd li {
+	width: 2.48rem;
+	margin: 0 0 .2rem;
+	border-right: .03rem solid #fff
+}
+.plist2 .bd li img {
+	width: 2.48rem;
+	height: 3.3rem
+}
+.plist2 .bd li .mask {
+	top: 2.9rem
+}
+.plist3 .bd ul {
+	width: 7.62rem
+}
+.plist3 .bd li {
+	margin: 0 0 .2rem
+}
+.plist3 .bd .col2 {
+	width: 5.02rem
+}
+.plist3 .bd .col2 img {
+	display: block;
+	width: 5.02rem;
+	height: 3.3rem
+}
+.plist3 .bd .col2 .mask {
+	top: 2.9rem
+}
+.plist3 .bd .col1 {
+	width: 2.49rem
+}
+.plist3 .bd .col1 img {
+	display: block;
+	width: 2.49rem;
+	height: 3.3rem
+}
+.plist3 .bd .col1 .mask {
+	top: 2.9rem
+}
+.plist4 .bd .col .mask {
+	top: 2.4rem!important
+}
+.plist4 .bd li img {
+	height: 2.79rem!important
+}
+.plist2 .bd li .covericon, .plist3 .bd li .covericon {
+	right: 0
+}
+.plist .hd {
+	width: 98%;
+	padding: 1%
+}
+.plist .hd, .plist .hd h3 {
+	height: .65rem;
+	line-height: .65rem
+}
+.plist .hd h3 {
+	float: left;
+	width: 3.97rem;
+	font-size: .3rem;
+	overflow: hidden
+}
+.plist .hd h3 a {
+	color: #333
+}
+.plist .hd h3 i {
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	margin: 0 .02rem 0 0;
+	vertical-align: -3px
+}
+.plist .hd .more {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	margin-right: .1rem;
+	overflow: hidden
+}
+.plist .hd .more .moreicon {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.plist .hd .more .moreTitle {
+	width: 3rem
+}
+.plist .hd .more .changeTitle, .plist .hd .more .moreTitle {
+	float: left;
+	margin-right: .06rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.plist .hd .more .changeTitle {
+	width: 2.98rem
+}
+.plist .hd .more .changeIcon {
+	float: left;
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 64.69% 69.07%
+}
+.plist .hd .ci {
+	float: left;
+	width: .3rem;
+	height: .3rem;
+	display: block;
+	margin: .16rem .06rem
+}
+.live-entrance {
+	width: 7.5rem;
+	height: 1.7rem;
+	margin: 0 0 .2rem;
+	text-align: center;
+	background: #fff;
+	overflow: hidden
+}
+.live-entrance a {
+	display: inline-block;
+	width: .9rem;
+	margin: .24rem .48rem 0;
+	font-size: .24rem;
+	color: #000
+}
+.live-entrance a img {
+	display: inline-block;
+	width: .9rem;
+	height: .9rem
+}
+.slide {
+	position: relative;
+	width: 7.5rem;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 0
+}
+.slide li {
+	float: left;
+	display: inline;
+	width: 7.5rem
+}
+.slide li a {
+	position: relative
+}
+.slide li a, .slide li img {
+	display: block;
+	width: 7.5rem;
+	height: auto
+}
+.slide li .swiper-tit {
+	padding-top: .5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 7.25rem;
+	padding-left: .25rem;
+	height: auto;
+	min-height: .46rem;
+	text-shadow: 0 0 4px #525252;
+	background: linear-gradient(180deg, rgba(0,0,0,.01), rgba(0,0,0,.8))
+}
+.slide li h3 {
+	height: .46rem;
+	line-height: .46rem;
+	font-size: .3rem
+}
+.slide li h3, .slide li p {
+	width: 5rem;
+	color: #fff;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block
+}
+.slide li p {
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .23rem
+}
+.slide .btns {
+	position: absolute;
+	z-index: 1;
+	bottom: .2rem;
+	right: .15rem
+}
+.slide .btns a {
+	float: left;
+	display: inline;
+	width: .1rem;
+	height: .1rem;
+	margin: 0 0 0 .1rem;
+	border-radius: .1rem;
+	background: hsla(0,0%,100%,.8)
+}
+.slide .btns a.now {
+	background: #00c3ed
+}
+.slide .btns span {
+	float: left;
+	display: inline;
+	width: .06rem;
+	height: .06rem;
+	margin: 0 0 0 .06rem;
+	border-radius: .06rem;
+	background: hsla(0,0%,100%,.8)
+}
+.slide .btns .pagebulletnow {
+	background: #00c3ed
+}
+.afpPosition {
+	width: 7.5rem;
+	overflow: hidden;
+	margin: 0;
+	font-size: 0
+}
+.dropload-load {
+	height: 1.61rem;
+	text-align: center;
+	font-size: .22rem;
+	color: #888
+}
+.live-recommend .bd li {
+	height: 1.12rem
+}
+.live-recommend .bd li h3, .live-recommend .bd li p {
+	width: 3rem;
+	margin: 0 .22rem 0 0;
+	overflow: hidden;
+	height: .36rem;
+	line-height: .36rem
+}
+.live-recommend .bd li p {
+	margin: .1rem 0 0;
+	color: #999;
+	font-size: .22rem
+}
+.game-live {
+	width: 7.5rem;
+	background: #fff;
+	margin: 0 0 .2rem
+}
+.game-live .hd {
+	width: 98%;
+	height: .88rem;
+	padding: 0 1%;
+	line-height: .88rem
+}
+.game-live .hd h3 {
+	float: left;
+	font-size: .3rem;
+	color: #000
+}
+.game-live .hd .list-more {
+	float: right;
+	font-size: .26rem;
+	color: #999;
+	padding-right: 0;
+	position: relative;
+	vertical-align: top
+}
+.game-live .hd .list-more em {
+	float: right;
+	font-size: .26rem;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%;
+	width: .24rem;
+	height: .26rem;
+	margin: .28rem 0 0 .05rem
+}
+.game-live .hd .more {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	overflow: hidden
+}
+.game-live .hd .more .moreicon {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.game-live .hd .more .moreTitle {
+	float: left;
+	margin-right: .06rem;
+	width: 3rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.game-live .bd {
+	width: 98%;
+	padding: 0 1%
+}
+.game-live .bd li {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: .2rem
+}
+.game-live .bd li a {
+	display: block;
+	color: #666
+}
+.game-live .bd li p {
+	color: #999;
+	font-size: .22rem;
+	height: .4rem;
+	line-height: .4rem;
+	overflow: hidden
+}
+.game-live .bd li p span {
+	display: inline-block;
+	margin: 0 .16rem 0 0;
+	float: left
+}
+.game-live .bd li p.tit-bt {
+	color: #666;
+	width: 3.8rem;
+	height: .4rem;
+	overflow: hidden
+}
+.game-live .bd li p em {
+	padding: 0 .1rem 0 0;
+	color: #ff9313
+}
+.game-live .bd li p .txt {
+	float: left;
+	width: 3rem
+}
+.game-live .bd li h3 {
+	margin: .1rem 0 0;
+	font-size: .26rem;
+	max-width: 5rem;
+	height: .48rem;
+	line-height: .48rem;
+	overflow: hidden
+}
+.game-live .bd li h3 img {
+	display: inline-block;
+	width: .48rem;
+	height: .48rem;
+	margin: 0 .2rem 0 0;
+	vertical-align: -.15rem;
+	border-radius: 2px
+}
+.game-live .bd li .live, .game-live .bd li .reserve, .game-live .bd li .reserved {
+	display: inline-block;
+	position: absolute;
+	top: .26rem;
+	right: 0;
+	width: 1.4rem;
+	height: .56rem;
+	line-height: .56rem;
+	text-align: center;
+	color: #fff;
+	font-size: .24rem;
+	border-radius: 3px
+}
+.game-live .bd li .live {
+	background: #ff9313
+}
+.game-live .bd li .reserve {
+	color: #333;
+	background: #f0f0f0
+}
+.game-live .bd li .reserved {
+	background: #04adf6
+}
+.game-live .bd .bpic {
+	float: left;
+	width: 2rem;
+	height: 1.12rem;
+	margin: 0 .24rem 0 0
+}
+.errors {
+	margin: 0 auto;
+	text-align: center;
+	background: #fff
+}
+.errors img {
+	display: block;
+	padding: 1rem .2rem 2%;
+	margin: 0 auto
+}
+.errors h4 {
+	height: .6rem;
+	line-height: .6rem;
+	padding: .2rem 2%;
+	font-size: .28rem;
+	color: #333
+}
+.errors h4, .errors p {
+	width: 96%;
+	overflow: hidden;
+	margin: 0 auto
+}
+.errors p {
+	height: .4rem;
+	line-height: .4rem;
+	padding: .02rem 2% 1rem;
+	font-size: .26rem;
+	color: #969696
+}
+.p-gotop {
+	opacity: 0;
+	position: fixed;
+	bottom: 1rem;
+	right: .2rem;
+	z-index: 1;
+	width: .82rem;
+	height: .85rem;
+	cursor: pointer;
+	pointer-events: none;
+	transition: all .3s
+}
+.p-gotop, .p-gotop.show {
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 29.5rem 27.4rem;
+	background-position: 26.78% 83.6%
+}
+.p-gotop.show {
+	opacity: 1;
+	pointer-events: auto
+}
+.p-gotop.show:active {
+	-webkit-tap-highlight-color: rgba(255,255,255,0)
+}
+.listsel {
+	width: 7.3rem;
+	margin: 0 0 .2rem;
+	padding: .1rem;
+	background: #fff;
+	overflow: hidden
+}
+.listsel .con {
+	width: 7.5rem
+}
+.listsel a {
+	display: block;
+	float: left;
+	width: 1.725rem;
+	height: 18px;
+	line-height: 20px;
+	padding: 5px 0;
+	text-align: center;
+	margin: .1rem .1rem 0 0;
+	border: 1px solid #dcdcdc;
+	border-radius: .56rem;
+	color: #666;
+	font-size: .26rem;
+	overflow: hidden
+}
+.listsel a.more {
+	text-indent: .2rem;
+	color: #00adef;
+	position: relative
+}
+.listsel .more i {
+	display: inline-block;
+	width: .22rem;
+	height: .22rem;
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 78.54% 69.01%
+}
+.sport-liveList {
+	width: 7.5rem;
+	background: #fff;
+	margin: 0 0 .2rem
+}
+.sport-liveList .sport-live .hd {
+	width: 98%;
+	height: .88rem;
+	padding: 0 1%;
+	line-height: .88rem
+}
+.sport-liveList .sport-live .hd h3 {
+	float: left;
+	font-size: .3rem;
+	color: #333
+}
+.sport-liveList .sport-live .hd .list-more {
+	float: right;
+	font-size: .26rem;
+	color: #969696;
+	padding-right: 0;
+	position: relative;
+	margin-right: .1rem
+}
+.sport-liveList .sport-live .hd .list-more em {
+	float: right;
+	font-size: .26rem;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%;
+	width: .24rem;
+	height: .26rem;
+	margin: .29rem 0 0 .05rem
+}
+.sport-liveList .sport-live .hd .more {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	overflow: hidden
+}
+.sport-liveList .sport-live .hd .more .moreicon {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.sport-liveList .sport-live .hd .more .moreTitle {
+	float: left;
+	margin-right: .06rem;
+	width: 3rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.sport-liveList .sport-live .bd {
+	width: 98%;
+	padding: 0 1%
+}
+.sport-liveList .sport-live .bd li {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin-bottom: .2rem
+}
+.sport-liveList .sport-live .bd li a {
+	display: block;
+	color: #666
+}
+.sport-liveList .sport-live .bd li p {
+	color: #333;
+	font-size: .22rem;
+	height: .4rem;
+	line-height: .4rem;
+	overflow: hidden
+}
+.sport-liveList .sport-live .bd li p span {
+	display: inline-block;
+	margin: 0 .16rem 0 0;
+	float: left
+}
+.sport-liveList .sport-live .bd li p span.tit-bt {
+	width: 4.8rem;
+	height: .4rem;
+	overflow: hidden
+}
+.sport-liveList .sport-live .bd li p em {
+	padding: 0 .1rem 0 0;
+	color: #ff9313
+}
+.sport-liveList .sport-live .bd li .txt {
+	float: left;
+	width: 3rem
+}
+.sport-liveList .sport-live .bd li h3 {
+	margin: .1rem 0 0;
+	font-size: .26rem;
+	max-width: 5rem;
+	height: .48rem;
+	line-height: .48rem;
+	overflow: hidden;
+	color: #333
+}
+.sport-liveList .sport-live .bd li h3 img {
+	display: inline-block;
+	width: .48rem;
+	height: .48rem;
+	margin: 0 .2rem 0 0;
+	vertical-align: -.15rem;
+	border-radius: 2px
+}
+.sport-liveList .sport-live .bd li h3 em, .sport-liveList .sport-live .bd li h3 span {
+	display: inline-block
+}
+.sport-liveList .sport-live .bd li h3 em {
+	margin: 0 .15rem
+}
+.sport-liveList .sport-live .bd li .live, .sport-liveList .sport-live .bd li .lookback, .sport-liveList .sport-live .bd li .reserve, .sport-liveList .sport-live .bd li .reserved {
+	display: inline-block;
+	position: absolute;
+	top: .26rem;
+	right: 0;
+	width: 1.4rem;
+	height: .56rem;
+	line-height: .56rem;
+	text-align: center;
+	color: #fff;
+	font-size: .24rem;
+	border-radius: 3px;
+	margin-right: .1rem
+}
+.sport-liveList .sport-live .bd li .live {
+	background: #ff9313
+}
+.sport-liveList .sport-live .bd li .reserve {
+	color: #333;
+	background: #f0f0f0
+}
+.sport-liveList .sport-live .bd li .reserved {
+	background: #04adf6
+}
+.sport-liveList .sport-live .bd li .lookback {
+	color: #333;
+	background: #f0f0f0
+}
+.sport-liveList .sport-live .bd .bpic {
+	float: left;
+	width: 2rem;
+	height: 1.12rem;
+	margin: 0 .24rem 0 0
+}
+.plist2 .bd li .covericon, .plist3 .bd li .covericon {
+	right: 0
+}
+.plist {
+	width: 7.5rem;
+	width: 100%;
+	margin: 0 0 .2rem;
+	color: #333;
+	background: #fff;
+	overflow: hidden
+}
+.plist.plist2 {
+	margin-top: .2rem!important
+}
+.plist .hd {
+	width: 98%;
+	padding: 1%
+}
+.plist .hd, .plist .hd h3 {
+	height: .65rem;
+	line-height: .65rem
+}
+.plist .hd h3 {
+	float: left;
+	width: 3.97rem;
+	font-size: .3rem;
+	overflow: hidden
+}
+.plist .hd h3 a {
+	color: #333
+}
+.plist .hd h3 i {
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	margin: 0 .02rem 0 0;
+	vertical-align: -3px
+}
+.plist .hd .more {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	margin-right: .1rem;
+	overflow: hidden
+}
+.plist .hd .more .moreicon {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.plist .hd .more .moreTitle {
+	width: 3rem
+}
+.plist .hd .more .changeTitle, .plist .hd .more .moreTitle {
+	float: left;
+	margin-right: .06rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.plist .hd .more .changeTitle {
+	width: 2.98rem
+}
+.plist .hd .more .changeIcon {
+	float: left;
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 64.69% 69.07%
+}
+.plist .hd .ci {
+	float: left;
+	width: .3rem;
+	height: .3rem;
+	display: block;
+	margin: .16rem .06rem
+}
+.plist .bd ul {
+	width: 7.6rem;
+	width: 110%
+}
+
+.plist2 .bd ul {
+	width: 7.62rem;
+	background: #fff
+}
+.plist2 .bd li {
+	width: 2.48rem;
+	margin: 0 0 .2rem;
+	border-right: .03rem solid #fff
+}
+.plist2 .bd li img {
+	width: 2.48rem;
+	height: 3.3rem
+}
+.plist2 .bd li .mask {
+	top: 2.9rem
+}
+.plist3 .bd ul {
+	width: 7.62rem
+}
+.plist3 .bd li {
+	margin: 0 0 .2rem
+}
+.plist3 .bd .col2 {
+	width: 5.02rem
+}
+.plist3 .bd .col2 img {
+	display: block;
+	width: 5.02rem;
+	height: 3.3rem
+}
+.plist3 .bd .col2 .mask {
+	top: 2.9rem
+}
+.plist3 .bd .col1 {
+	width: 2.49rem
+}
+.plist3 .bd .col1 img {
+	display: block;
+	width: 2.49rem;
+	height: 3.3rem
+}
+.plist3 .bd .col1 .mask {
+	top: 2.9rem
+}
+.cartoonEntry {
+	width: 7.5rem;
+	height: 1.5rem;
+	background-color: #fff
+}
+.cartoonEntry a {
+	margin: .15rem .1rem;
+	display: block;
+	float: left
+}
+.cartoonEntry a, .cartoonEntry a img {
+	width: 3.54rem;
+	height: 1.2rem
+}
+.plist2 .bd li .covericon, .plist3 .bd li .covericon {
+	right: 0
+}
+.plist {
+	width: 7.5rem;
+	width: 100%;
+	margin: 0 0 .2rem;
+	color: #333;
+	background: #fff;
+	overflow: hidden
+}
+.plist.plist2 {
+	margin-top: .2rem!important
+}
+.plist .hd {
+	width: 100%;
+	padding: 1%
+}
+.plist .hd, .plist .hd h3 {
+	height: .65rem;
+	line-height: .65rem
+}
+.plist .hd h3 {
+	float: left;
+	width: 3.97rem;
+	font-size: .3rem;
+	overflow: hidden
+}
+.plist .hd h3 a {
+	color: #333
+}
+.plist .hd h3 i {
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	margin: 0 .02rem 0 0;
+	vertical-align: -3px
+}
+.plist .hd .more {
+	float: right;
+	width: 3.28rem;
+	height: .65rem;
+	line-height: .65rem;
+	font-size: .26rem;
+	color: #969696;
+	margin-right: .1rem;
+	overflow: hidden
+}
+.plist .hd .more .moreicon {
+	float: left;
+	display: block;
+	width: .22rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 74.7% 69.04%
+}
+.plist .hd .more .moreTitle {
+	width: 3rem
+}
+.plist .hd .more .changeTitle, .plist .hd .more .moreTitle {
+	float: left;
+	margin-right: .06rem;
+	height: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right
+}
+.plist .hd .more .changeTitle {
+	width: 2.98rem
+}
+.plist .hd .more .changeIcon {
+	float: left;
+	display: block;
+	width: .24rem;
+	height: .24rem;
+	margin: .205rem 0 0;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 64.69% 69.07%
+}
+.plist .hd .ci {
+	float: left;
+	width: .3rem;
+	height: .3rem;
+	display: block;
+	margin: .16rem .06rem
+}
+.plist .bd ul {
+	width: 7.6rem;
+	width: 110%
+}
+.plist .bd li {
+	display: inline-block;
+	vertical-align: top;
+	width: 3.74rem;
+	min-height: 2.5rem;
+	margin: 0 0 .2rem;
+	border-right: .03rem solid #fff;
+}
+.plist .bd li a {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #fff;    height:auto;
+    overflow: hidden;
+}.plist .bd li.c a {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #fff;height: 2.1rem;
+    overflow: hidden;
+}
+.plist .bd li img {
+	display: block;
+	width: 3.73rem;
+	height:auto;
+}
+.plist .bd li .mask {
+	position: absolute;
+	top: 1.7rem;
+	left: 0;
+	width: 96%;
+	padding: 0 2%;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.02), rgba(0,0,0,.3) 60%);
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .24rem;
+	overflow: hidden
+}
+.plist .bd li .mask .score {
+	color: #ff9313
+}
+.plist .bd li h4 {
+	height: .5rem;
+	line-height: .5rem;
+	font-size: .26rem;
+	color: #333
+}
+.plist .bd li .txt, .plist .bd li h4 {
+	width: 96%;
+	padding: 0 2%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block
+}
+.plist .bd li .txt {
+	height: .3rem;
+	line-height: .3rem;
+	font-size: .23rem;
+	color: #969696
+}
+.plist .bd li .txt i {
+	display: inline-block;
+	width: .22rem;
+	height: .22rem;
+	margin: 0 .05rem 0 0;
+	vertical-align: -2px;
+	background: url(../assets/spritesheet.png) no-repeat;
+	background-size: 22.22rem 20.55rem;
+	background-position: 80.5% 69.01%
+}
+.plist .bd li .covericon {
+	position: absolute;
+	width: auto;
+	top: 0;
+	right: .009rem;
+	padding: 0 .1rem;
+	height: .32rem;
+	line-height: .32rem;
+	text-align: center;
+	color: #fff;
+	font-size: .2rem;
+	background: #ef681f
+}
+.plist2 .bd ul {
+	width: 7.62rem;
+	background: #fff;margin-left: 2%;
+}
+.plist2 .bd li {
+	width: 30%;
+	margin: 0 0 .2rem;
+	border-right: .03rem solid #fff
+}
+.plist2 .bd li img {
+	width: 2.48rem;
+	height: 3.3rem
+}
+.plist2 .bd li .mask {
+	top: 2.9rem
+}
+.plist3 .bd ul {
+	width: 7.62rem
+}
+.plist3 .bd li {
+	margin: 0 0 .2rem
+}
+.plist3 .bd .col2 {
+	width: 5.02rem
+}
+.plist3 .bd .col2 img {
+	display: block;
+	width: 5.02rem;
+	height: 3.3rem
+}
+.plist3 .bd .col2 .mask {
+	top: 2.9rem
+}
+.plist3 .bd .col1 {
+	width: 2.49rem
+}
+.plist3 .bd .col1 img {
+	display: block;
+	width: 2.49rem;
+	height: 3.3rem
+}
+.plist3 .bd .col1 .mask {
+	top: 2.9rem
+}
+.bd li.character {
+	width: 1.8rem;
+	margin: 0 .03rem .2rem;
+	border-right: 0 solid #fff;
+	min-height: 1.8rem;
+	float: left;
+	display: block
+}
+.bd li.character img {
+	width: 1.8rem;
+	border-radius: 20%;
+	height: 1.8rem
+}
+.trailer {
+	width: 100%;
+	height: 4.97rem;
+	margin: 0 0 .2rem
+}
+.trailer .hd {
+	width: 98%;
+	height: .68rem;
+	background-color: #fff;
+	font-size: .3rem;
+	color: #323232;
+	line-height: .68rem;
+	padding: 0 1%
+}
+.trailer .bd {
+	width: 100%;
+	height: 4.29rem;
+	background-color: #fff;
+	overflow: hidden
+}
+.trailer .bd ul {
+	width: 99999999px;
+	height: 4.29rem
+}
+.trailer .bd ul li {
+	position: relative;
+	float: left;
+	width: 2rem;
+	height: 4.29rem
+}
+.trailer .bd .time {
+	width: 100%;
+	height: .58rem;
+	border-bottom: 1px solid #dcdcdc;
+	line-height: .58rem;
+	font-size: .22rem;
+	text-align: center;
+	color: #323232
+}
+.trailer .bd .point {
+	position: absolute;
+	width: .12rem;
+	height: .12rem;
+	border-radius: 50%;
+	background-color: #dcdcdc;
+	top: .52rem;
+	left: .92rem
+}
+.trailer .bd .pic {
+	width: 100%;
+	border-right: 1px solid #fff;
+	position: absolute;
+	top: .82rem;
+	height: 2.66rem
+}
+.trailer .bd .pic img {
+	width: 98.5%;
+	height: 100%
+}
+.trailer .bd .pic .cornermark {
+	height: .32rem;
+	line-height: .32rem;
+	font-size: .22rem;
+	padding: 0 .08rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	color: #fff
+}
+.trailer .bd .pic .trail {
+	background-color: #ff9313
+}
+.trailer .bd .pic .vip {
+	background-color: #fd5151
+}
+.trailer .bd li .title {
+	height: .73rem;
+	color: #323232;
+	width: 1.8rem;
+	overflow: hidden;
+	padding-top: .08rem;
+	padding: .08rem 3.74% 0;
+	position: absolute;
+	bottom: 0;
+	font-size: .26rem
+}
