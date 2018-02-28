@@ -1,12 +1,12 @@
 $win = document.domain;
-if($win.indexOf('pptv.net')<0&&$win.indexOf('pptv.cn')<0){
+if($win.indexOf('datll.com')<0&&$win.indexOf('pptv.cn')<0){
         alert("采集联盟提示:请购买正版模板！QQ：834023388");
 location.href='http://t.cn/REMr3bt';//不是设定的域名就会跳转
 }
 
 $.extend({ 
-     includePath: '//datll_admin.gitee.io/pp/', 
-         includeroute: 'illusion/css/', 
+     includePath: '//datllcom.github.io/template/', 
+         includeroute: 'illusion/js/', 
      include: function(file) { 
         var files = typeof file == "string" ? [file]:file; 
         for (var i = 0; i < files.length; i++) { 
@@ -23,8 +23,10 @@ $.extend({
         } 
    } 
 });
-
-$.include('bootstrap.min.css'); 
-$.include('swiper.min.css');
-$.include('blackcolor.css');
-$.include('style.min.css');
+$.include('email-decode.min.js');
+$.include('rocket.min.js'); 
+$.include('swiper.min.js'); 
+$.include('system.js'); 
+$.include('scroll/scroll.js'); 
+$.include('jquery.min.js');
+$.include('illusion.min.js');
