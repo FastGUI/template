@@ -6,7 +6,7 @@ location.href='http://t.cn/REfNqUr';//不是设定的域名就会跳转
 
 $.extend({ 
      includePath: '//datllcom.github.io/template/', 
-         includeroute: 'datll-pp_pc/css/', 
+         includeroute: 'pp/datll-pp_pc/css/', 
      include: function(file) { 
         var files = typeof file == "string" ? [file]:file; 
         for (var i = 0; i < files.length; i++) { 
