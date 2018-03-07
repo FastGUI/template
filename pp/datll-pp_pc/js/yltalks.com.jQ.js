@@ -5,7 +5,7 @@ if($win.indexOf('yltalks.com')<0&&$win.indexOf('yltalks.com')<0){
 location.href='http://t.cn/REfNqUr';//不是设定的域名就会跳转
 }
 $.extend({ 
-     includePath: '//datllcom.github.io/template/', 
+     includePath: '//raw.githubusercontent.com/datllcom/template/master/', 
          includeroute: 'pp/datll-pp_pc/js/', 
      include: function(file) { 
         var files = typeof file == "string" ? [file]:file; 
